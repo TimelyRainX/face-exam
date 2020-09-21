@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.parent{
+             width:100px;
+             height: 100px;
+             position: relative;
+             background: paleturquoise;
+        }
+        div.container {
+            width:30px;
+            height: 30px;
+            background: green;
+        }
+        div.child {
+            width:80px;
+            height: 80px;
+            position: absolute;
+            background: red;
+            opacity: .6;
+            top: 0;
+            left: 0;
+            /* pointer-events:none; */ 
+            /* auto 可以捕获点击事件 */
+            /* none 不可捕获点击事件, 直接透传给下一层 */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
