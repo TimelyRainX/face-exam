@@ -14,5 +14,5 @@ var male = {
         console.log(this.name);
     }
 }
-const person = new (Person.bind(male, 'xiaohong'))();
-person.sayHi();
+const person1 = new (Person.bind(male, 'xiaohong'))();
+person1.sayHi();
